@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форматування таблиці</title>
+    <style>
+        /* Основні стилі таблиці */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стилі заголовків таблиці */
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Стилі клітинок таблиці */
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Стилі для рядків таблиці при наведенні курсору */
+        tr:hover {
+            background-color: #e8e8e8;
+        }
+
+        /* Стилі для зебра-стрипів у таблиці */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Стилі для рамок таблиці */
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        /* Стилі для заокруглених кутів таблиці */
+        th, td {
+            border-radius: 5px;
+        }
+
+        /* Стилі для футера таблиці */
+        tfoot td {
+            background-color: #e4e4e4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Назва</th>
+                <th>Кількість</th>
+                <th>Ціна</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Товар А</td>
+                <td>10</td>
+                <td>100 грн.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Товар Б</td>
+                <td>20</td>
+                <td>200 грн.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Товар В</td>
+                <td>30</td>
+                <td>300 грн.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Всього:</td>
+                <td>600 грн.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
