@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форми</title>
+    <script>
+        // JavaScript функція для виведення простого повідомлення
+        function showMessage() {
+            var name = document.getElementById("name").value;
+            alert("Привіт, " + name + "!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Проста форма</h2>
+    <form action="#">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name">
+        <input type="button" value="Показати повідомлення" onclick="showMessage()">
+    </form>
+    
+    <h2>Форма з вибором</h2>
+    <form action="#">
+        <label for="color">Улюблений колір:</label>
+        <select id="color" name="color">
+            <option value="red">Червоний</option>
+            <option value="green">Зелений</option>
+            <option value="blue">Синій</option>
+        </select>
+        <input type="submit" value="Надіслати">
+    </form>
+    
+    <h2>Форма з радіокнопками</h2>
+    <form action="#">
+        <p>Ваша стать:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br>
+        <input type="submit" value="Надіслати">
+    </form>
+    
+    <h2>Форма з прапорцями</h2>
+    <form action="#">
+        <p>Оберіть хобі:</p>
+        <input type="checkbox" id="hobby1" name="hobby1" value="reading">
+        <label for="hobby1"> Читання</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="traveling">
+        <label for="hobby2"> Подорожі</label><br>
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>
